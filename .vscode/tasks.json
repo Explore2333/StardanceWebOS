@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Update MusicOS script",
+			"type": "shell",
+			"command": "cd /Users/soundaryakanumalli/nikki-workspace/StardanceWebOS && python - <<'PY'\nfrom pathlib import Path\npath = Path('script.js')\nprint(path.read_text())\nPY",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
