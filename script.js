@@ -139,6 +139,9 @@ function refreshNowPlaying() {
 function openWindow() {
   if (!windowElement) return;
   windowElement.style.display = "flex";
+  windowElement.style.top = "50%";
+  windowElement.style.left = "50%";
+  windowElement.style.transform = "translate(-50%, -50%)";
 }
 
 function closeWindow() {

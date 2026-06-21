@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: Noto Sans, system-ui, sans-serif;
     min-height: 100vh;
@@ -152,8 +162,8 @@ body {
     max-width: 980px;
     max-height: calc(100vh - 40px);
     left: 50%;
-    transform: translateX(-50%);
-    top: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
 }
 
@@ -250,8 +260,11 @@ body {
 }
 
 .window-body {
-    padding: 20px 16px 18px;
+    padding: 16px 16px 18px;
     overflow-y: auto;
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
 }
 
 .music-shell {
@@ -263,6 +276,7 @@ body {
 .hero-panel {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 18px;
     padding: 18px;
     background: rgba(20, 20, 20, 0.9);
@@ -322,10 +336,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    align-items: center;
+    justify-content: center;
 }
 
 .album-artwork {
-    width: 100%;
+    width: min(280px, 100%);
     aspect-ratio: 1 / 1;
     background: linear-gradient(135deg, #ff7f50 0%, #ff4f8d 100%);
     border-radius: 20px;
@@ -333,6 +349,7 @@ body {
     place-items: center;
     color: #fff;
     font-size: 2.4rem;
+    margin: 0 auto;
 }
 
 .album-meta {
