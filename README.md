@@ -1,2 +1,16 @@
 # StardanceWebOS
-MusicOS is an operating system to help with music functionality. It provides the user with a music based operating system. They can get a small greeting from the computer when they open the Home tab, along with the time and the date of the year. They then can also see what music they are currently playing on the operating system. They also have the option of "Music Library" to add their favorite music and songs, along with their favorite artists. This helps in organization. Next up, we have the playlist tab to add their playlist names to a group of playlist collection. Lastly, the user is able to customize their screen settings with the ability to change their screen opacity.
+MusicOS is a beginner-friendly operating system designed specifically for music enthusiasts. The system provides a music-centered experience with features that make organizing and enjoying music simple and convenient.
+
+When users open the Home tab, they are greeted with a welcome message, along with the current time and date. The home screen also displays the music currently playing, allowing users to quickly view their listening activity.
+
+The Music Library feature enables users to save and organize their favorite songs, albums, and artists in one place for easy access. Users can also use the Playlists tab to create and manage collections of playlists, making it easier to organize music based on mood, genre, or personal preference.
+
+Additionally, MusicOS includes customizable display settings, allowing users to adjust screen opacity to personalize their experience.
+
+Work Assisted by AI
+
+1) Generated the operating system background image
+2) Assisted with code formatting and organization
+3) Helped create the bottom navigation panel
+
+This project demonstrates the development of a simple music-focused operating system with user-friendly organization and customization features.
