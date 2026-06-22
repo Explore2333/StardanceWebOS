@@ -3,7 +3,7 @@ MusicOS is a beginner-friendly operating system designed specifically for music 
 
 When users open the Home tab, they are greeted with a welcome message, along with the current time and date. The home screen also displays the music currently playing, allowing users to quickly view their listening activity.
 
-The Music Library feature enables users to save and organize their favorite songs, albums, and artists in one place for easy access. Users can also use the Playlists tab to create and manage collections of playlists, making it easier to organize music based on mood, genre, or personal preference.
+The Genres feature helps them organize what may be their favorite songs, albums, and artists in one place for easy access. 
 
 Additionally, MusicOS includes customizable display settings, allowing users to adjust screen opacity to personalize their experience.
 
