@@ -22,12 +22,8 @@
       <p class="appicon-label">Home</p>
     </div>
     <div id="appIcon2" class="appicon" data-screen="libraryScreen">
-      <div class="appicon-icon">L</div>
-      <p class="appicon-label">Library</p>
-    </div>
-    <div id="appIcon3" class="appicon" data-screen="playlistsScreen">
-      <div class="appicon-icon">P</div>
-      <p class="appicon-label">Playlists</p>
+      <div class="appicon-icon">G</div>
+      <p class="appicon-label">Genres</p>
     </div>
   </div>
   <div id="window" class="window">
@@ -51,39 +47,19 @@
           <div>
             <p class="greeting-text" id="greetingText">Good Afternoon</p>
             <p class="now-playing-label">Now Playing</p>
-            <p class="now-playing-song" id="nowPlayingTitle">Blinding Lights - The Weeknd</p>
+            <p class="now-playing-song" id="nowPlayingTitle">MusicOS</p>
           </div>
           <div class="time-group">
             <p class="clock-large" id="mainClock">3:42 PM</p>
             <p class="date-large" id="mainDate">June 21, 2026</p>
           </div>
         </div>
-        <div class="player-card">
-          <div class="artwork-card">
-            <div class="album-artwork">ART</div>
-            <div class="album-meta">
-              <p class="song-title" id="songTitle">Blinding Lights</p>
-              <p class="artist-name" id="songArtist">The Weeknd</p>
-            </div>
-          </div>
-          <div class="progress-card">
-            <div class="progress-info">
-              <span id="currentTime">0:00</span>
-              <input id="progressSlider" type="range" min="0" max="100" value="0">
-              <span id="durationTime">4:02</span>
-            </div>
-            <div class="player-controls">
-              <button id="prevButton" class="control-button">Prev</button>
-              <button id="playPauseButton" class="control-button">Play</button>
-              <button id="nextButton" class="control-button">Next</button>
-              <input id="volumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.75">
-            </div>
-          </div>
+        <div class="info-card">
+          <p class="home-info">Explore genres, learn about styles, and play a fun Genre Match Game from the dock.</p>
         </div>
         <div class="quick-apps">
           <button class="quick-app-button active" data-screen="homeScreen">Home</button>
-          <button class="quick-app-button" data-screen="libraryScreen">Music Library</button>
-          <button class="quick-app-button" data-screen="playlistsScreen">Playlists</button>
+          <button class="quick-app-button" data-screen="libraryScreen">Types of Music</button>
           <button class="quick-app-button" data-screen="settingsScreen">Settings</button>
         </div>
         <div class="screen-panels">
@@ -95,26 +71,31 @@
             </div>
           </section>
           <section id="libraryScreen" class="app-screen">
-            <h2>Library</h2>
-            <div class="library-manager">
-              <form id="newSongForm" class="library-form">
-                <input id="newSongTitle" type="text" placeholder="Song title" />
-                <input id="newSongArtist" type="text" placeholder="Artist" />
-                <button type="submit">Add Song</button>
-              </form>
+            <h2>Types of Music</h2>
+            <div class="genres-grid">
+              <div class="genre-card">
+                <h3>Pop</h3>
+                <p>Catchy melodies, verse-chorus structure, and broad commercial appeal.</p>
+              </div>
+              <div class="genre-card">
+                <h3>Rock</h3>
+                <p>Electric guitars, strong backbeat, and often band-oriented arrangements.</p>
+              </div>
+              <div class="genre-card">
+                <h3>Hip-Hop</h3>
+                <p>Rhythmic speech (rapping), DJing, and beat-driven production.</p>
+              </div>
+              <div class="genre-card">
+                <h3>Electronic</h3>
+                <p>Synthesizers, drum machines, and production-focused sound design.</p>
+              </div>
+              <div class="genre-card">
+                <h3>Classical</h3>
+                <p>Orchestral compositions, complex arrangements, and instrumental focus.</p>
+              </div>
             </div>
-            <ul id="libraryList" class="library-list"></ul>
           </section>
-          <section id="playlistsScreen" class="app-screen">
-            <h2>Playlists</h2>
-            <div class="playlist-manager">
-              <form id="newPlaylistForm" class="playlist-form">
-                <input id="newPlaylistName" type="text" placeholder="New playlist name" />
-                <button type="submit">Create</button>
-              </form>
-              <ul id="playlistList" class="playlist-list"></ul>
-            </div>
-          </section>
+          <!-- Popular Songs tab removed -->
           <section id="settingsScreen" class="app-screen">
             <h2>Settings</h2>
             <p>Choose playback style and window opacity.</p>
@@ -129,7 +110,7 @@
       </div>
     </div>
   </div>
-
+  <!-- audio removed per request -->
   <script src="script.js"></script>
 
 </body>
